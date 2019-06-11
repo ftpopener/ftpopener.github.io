@@ -1,0 +1,7 @@
+<html>
+<script>
+var regex = new RegExp("[\\?&]url=([^&#]*)");
+var results = regex.exec( window.location.href );
+window.location = results[1];
+</script>
+</html>
